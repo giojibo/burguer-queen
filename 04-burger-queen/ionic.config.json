@@ -1,0 +1,7 @@
+{
+  "name": "04-burger-queen",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
