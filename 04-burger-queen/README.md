@@ -8,21 +8,20 @@ Angular 19
 Node JS 20.9.0
 Ionic 7.1.1 
 Docker 
-Mondo db 
-
+Mongo db 
 Editor Visual Studio Code
 
-## Instalación 
+# Instalación 
 Pasos para realizar la instalación de este proyecto: 
 
-# Clonar el repositorio
+## Clonar el repositorio
 git clone https://github.com/giojibo/burguer-queen
 
-# Entra a la carpeta 
+## Entra a la carpeta 
 
 cd 04-burguer-queen 
 
-# Instala las dependencias 
+## Instala las dependencias 
 npm install
 
 ## Como correr el proyecto
