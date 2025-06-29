@@ -5,8 +5,7 @@
 export const environment = {
   production: false,
   urlApi: 'http://localhost:3000/api/v1/',
-  publishKey: '',
-  secretKey: '',
+  clientId: 'AfRGr1yIWilSw6YfbZfB8PqWLRQI6gMB2R-SI8vOOcy_Vd0G8bolmjiN0IAmVoHUCn5ZHFFiNkqdB1Js'
 };
 
 

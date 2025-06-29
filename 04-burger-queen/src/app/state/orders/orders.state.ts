@@ -29,14 +29,14 @@ export class OrdersState {
   ) {}
 
   @Action(CreateOrder)
-  add({ getState, setState }: StateContext<OrdersStateModel>, { payload }: CreateOrder) {
-
-    return this.ordersServices.createOrder(payload.order).then(
-      (success: boolean) => {
-        setState({
-          success
-        });
-      }
-    )
+  add({ setState }: StateContext<OrdersStateModel>, { payload }: CreateOrder) {
+  return this.ordersServices.createOrder(payload.order)
+    .then((success: boolean) => {
+      setState({ success });
+    })
+    .catch((err) => {
+      console.error('Error al crear orden:', err);
+      setState({ success: false }); // IMPORTANTE: actualiza el estado en caso de fallo
+    });
   }
 }
